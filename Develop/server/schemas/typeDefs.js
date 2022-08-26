@@ -1,43 +1,48 @@
 const { gql } = require("apollo-server-express");
 
-//need help setting typeDefs for Book, Query, and Mutation. Do I need one for Author?
+//need help setting typeDefs for  Query, and Mutation.
 const typeDefs = gql`
-    type User {
-        _id: ID
-        username: String
-        email: String
-        bookCount: Int
-        savedBooks: [Book]
-    }
+  type User {
+    _id: ID!
+    username: String!
+    email: String
+    bookCount: Int
+    savedBooks: [Book]
+  }
 
-    type Book {
-        bookId: ID
-        authors: [Author]
-        description: String
-        title: String
-        image: 
-        link: 
-    }
+  type Book {
+    bookId: ID!
+    authors: [String]
+    description: String
+    title: String!
+    image: String
+    link: String
+  }
 
-    type Auth {
-        token: ID!
-        user: User
-    }
+  type Auth {
+    token: ID!
+    user: User
+  }
 
-    type Query {
-        me: User
-        users: [User]
-        user(username: String!): User
-        books(username: String): [Book]
+  input BookInput {
+    authors: [String]
+    description: String!
+    bookId: String!
+    image: String
+    link: String
+    title: String!
+  }
 
-    }
+  type Query {
+    me: User
+  }
 
-    type Mutation {
-        login(email: String!, password: String!): Auth
-        addUser(username: String!, email: String!, password: String!): Auth
-        saveBook(Author: String!, description: String, title: String!, bookId: Int, image: , link: ): User
-
-    }
+  type Mutation {
+    login(email: String!, password: String!): Auth
+    addUser(username: String!, email: String!, password: String!): Auth
+    saveBook(bookData: BookInput!): User
+    removeBook(bookId: ID!): User
+  }
 `;
 
 module.exports = typeDefs;
