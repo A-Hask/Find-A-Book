@@ -1,68 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Find-A-Book
 
-## Available Scripts
+## Created by: Arlene Haskins
 
-In the project directory, you can run:
+## Github: A-Hask
 
-### `yarn start`
+## Email: ahask93@gmail.com
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Description
 
-### `yarn test`
+This app is used to find books and add them to a list.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## Table of Contents
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Installation Instructions](#installation-instructions)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- [Usage Information](#usage-information)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Contribution Guidelines](#contribution-guidelines)
 
-### `yarn eject`
+- [Test Instructions](#test-instructions)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [License or Licenses](#license-or-licenses)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Installation Instructions
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Click the heroku link and sign up to use the app.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage Information
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Once the user is signed up, they can log in and add books to their list. When they no longer need the book in their list, the book can be removed from the list.
 
-### Code Splitting
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Contribution Guidelines
 
-### Analyzing the Bundle Size
+N/A
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+---
 
-### Making a Progressive Web App
+## Test Instructions
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+N/A
 
-### Advanced Configuration
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## License or Licenses
 
-### Deployment
+      This project is licensed through None.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![GitHub License](https://img.shields.io/badge/license-None-blue.svg)
