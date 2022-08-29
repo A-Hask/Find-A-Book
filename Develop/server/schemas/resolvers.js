@@ -40,11 +40,17 @@ const resolvers = {
     saveBook: async (parent, { bookData }, context) => {
       console.log("trying to save");
       if (context.user) {
+        console.log(context.user);
+        const user = await User.findOne({
+          _id: context.user._id,
+        });
+        console.log(" user stuff", user);
         const updatedUser = await User.findByIdAndUpdate(
           { _id: context.user._id },
-          { $push: { savedBooks: bookData } },
+          { $addToSet: { savedBooks: bookData } },
           { new: true }
         );
+        console.log("stuff from updated user", updatedUser);
         return updatedUser;
       }
       throw new AuthenticationError("Please log in first!");
